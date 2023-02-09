@@ -3,11 +3,6 @@ import './components/button';
 import './components/input';
 import * as styles from './styles.module.pcss';
 
-function render(html) {
-  const app = document.querySelector('#app');
-  app.innerHTML = html;
-}
-
 const ROUTES = {
   "login" : login,
   "404" : login,
@@ -15,6 +10,11 @@ const ROUTES = {
 }
 
 const PORT = 3000;
+
+function render(html) {
+  const app = document.querySelector('#app');
+  app.innerHTML = html;
+}
 
 window.goToPage = function (name) {
   const page = ROUTES[name]
