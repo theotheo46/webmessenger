@@ -1,12 +1,13 @@
 import login from './pages/login/login.hbs';
+import error from './pages/error/error.hbs';
 import './components/button';
 import './components/input';
 import * as styles from './styles.module.pcss';
 
 const ROUTES = {
   "login" : login,
-  "404" : login,
-  "500" : login,
+  "404" : error,
+  "500" : error,
 }
 
 const PORT = 3000;
@@ -28,14 +29,15 @@ window.goToPage = function (name) {
         title: 'Вход',
         login:    {  placeholder: 'Логин', type: 'text', error_text: 'Неверный логин' }, 
         password: {  placeholder: 'Пароль', type: 'password', error_text: '' }, 
+        button: {label: 'Авторизоваться'},
         styles 
       }
       break;
     case '404':
-      context = { title: '404', placeholder: 'Логин', type: 'text', error_text: 'Неверный логин', styles }
+      context = { errorCode: '404', errorText: 'Не туда попали', styles }
       break;
     case '500':
-      context = { title: '500', placeholder: 'Логин', type: 'text', error_text: 'Неверный логин', styles }
+      context = { errorCode: '500', errorText: 'Мы уже фиксим', styles }
       break;
     default:
       console.log('Unknown name: ' + name);
@@ -49,6 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     title: 'Вход',
     login:    {  placeholder: 'Логин', type: 'text', error_text: 'Неверный логин' }, 
     password: {  placeholder: 'Пароль', type: 'password', error_text: '' }, 
+    button: {label: 'Авторизоваться'},
     styles 
   }
   render(ROUTES.login(context));
