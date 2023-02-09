@@ -16,6 +16,9 @@ function render(html) {
   app.innerHTML = html;
 }
 
+
+
+
 window.goToPage = function (name) {
   const page = ROUTES[name]
   let context;
