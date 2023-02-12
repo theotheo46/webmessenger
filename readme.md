@@ -6,6 +6,7 @@
 - [Сборка](#сборка)
 - [Требования](#требования)
 - [Эскизы экранов проекта](#эскизы-экранов-проекта)
+- [Netlify](#netlify)
 - [Pull request](#pull-request)
 
 ## Технологии
@@ -39,5 +40,8 @@ __dirname: /home/theo/js/webmessenger/src/server!
 
 ### Эскизы экранов проекта
 https://www.figma.com/file/czgVwSwTwVXR7bsZkTCPpq/ChatDesign?node-id=0%3A1&t=fprZOeuuS8Qe8bnG-1
+
+### Netlify
+
 
 ### Pull request
