@@ -9,12 +9,12 @@
 - [Netlify](#netlify)
 - [Pull request](#pull-request)
 
-## Технологии
+### Технологии
 - [Parcel](https://parceljs.org/)
 - [Handlebarsjs](https://handlebarsjs.com/)
 - [Node JS](https://nodejs.org/en/)
 
-## Сборка
+### Сборка
 Сборка проекта осуществляется в VSCode с помощью скриптов
 
 Сборка и запуск в DEV среде с помощью parcel
